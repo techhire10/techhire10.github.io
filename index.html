@@ -1,50 +1,154 @@
-
+<!--
+    Name: Margaret Donin
+    Date Created: 3/25/20
+    Most recent revision:
+    Please excuse any typos especially in names.
+    I tried to be careful, I apologize in advance.
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Example Landing Page</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Cohort 10</title>
+        <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-image: url(images/matrix.jpg);
+            }
 
-<style>
-table {
-  border:1px solid red;
-  border-collapse: collapse;
-}
+            table, footer, h2, h3{
+                background-color: rgba(171, 228, 171, 0.9);
+                border: rgba(30, 85, 30, 0.87) 5px double;
 
-td {
-  border:1px solid black;
-  padding:8px;
-  text-align:center;
-}
+            }
 
-body {
-  font-family:sans-serif;
-}
+            header, footer, h2, h3 {
+                font-family: 'Oswald', sans-serif;
+                text-align: center;
+            }
 
-#main {
-  padding-top:40px;
-  text-align:center;
-  width: 600px;
-  margin:0 auto;
-}
+            header {
+                margin: 3% 20% 2%;
+                color: white;
+                font-size: 50px;
+                background-image: radial-gradient(white, rgba(171, 228, 171, 0.9));
+                border-radius: 15px;
+                text-shadow: 5px 5px rgba(30, 85, 30, 0.87);
+            }
 
-h1 {
-  text-align:center;
-}
-</style>
-</head>
+ /* Still need to work out the spacing and such, or get familiar with bootstrap ;)
+            h3 {
+                max-width: 300px;
+                padding: 0 1em;
+                text-align: center;
+                margin-left: 30%;
+            }
+*/
 
-<body>
-<div id="main">
-<h1>Tech Hire Cohort 10</h1>
+            h2 {
+                margin: 2% 5% 2% 30%;
+                padding: 0 1em 0;
+                font-size: 32px;
+                float: left;
+            }
 
-Class Directory - Coming Soon
-<br><br>
-<a href="http://zoom.techhire10.com">Zoom Meeting Link</a>
-<br><br>
-<a href="landing/index.html">Example Landing Page</a>
+            footer {
+                margin: auto;
+                font-size: 30px;
+                min-height: auto;
+                min-width: auto;
+                max-width: 700px;
+            }
 
-</div>
-</body>
+            table {
+                margin: 2% 5% 2% 15%;
+                padding: 1%;
+            }
+
+            td {
+                padding: 3px 5px;
+                text-align: center;
+                font-family: 'Bellota Text', cursive;
+                font-size: 24px;
+            }
+
+            a {
+                color:black;
+                text-decoration-line: none;
+            }
+            a:visited {
+                color:rgba(30, 85, 30, 0.87);
+            }
+
+            a:hover {
+                color: white;
+                cursor: url(images/lightSaber.png), crosshair;
+            }
+
+            a:active {
+                font-weight: bold;
+            }
+
+            img {
+                width: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>TechHire Cohort 10</h1>
+        </header>
+
+        <nav>
+            <!--
+            need to get to know bootstrap I before adding this in
+            <h3><a href="https://zoom.us/j/2792401555?status=success">Zoom</a></h3>
+            -->
+            <h2>Students</h2>
+
+            <!--plan to rearrange this using bootstrap as soon as I finish the CSS chapter-->
+            <table>
+                <tr>
+                    <td><a href = "http://abdullah35th.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Abdullah</a></td>
+                    <td><a href = "https://arfin75.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Afrin</a></td>
+                    <td><a href = "http://azimovbob.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Bob</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href = "https://chelseaam.com/"><img src = "images/yoda.png" alt = "baby yoda" />Chelsea</a></td>
+                    <td><a href = "http://elenacaballero2.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Elena</a></td>
+                    <td><a href = "https://hinkabi.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Hannah</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href = "https://genoftravelers.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Karma</a></td>
+                    <td><a href = "https://zakharovakr.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Kristina</a></td>
+                    <td><a href = "https://kimberleem.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Max</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href = "https://mohammedchowdhury.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Mohammed</a></td>
+                    <td><a href = "https://narishsingh.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Narish</a></td>
+                    <td><a href = "https://patrickmichaelwalsh.com/techhire10/"><img src = "images/yoda.png" alt = "baby yoda" />Patrick</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href = "https://rtdonin.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Rita</a></td>
+                    <td><a href = "https://shantoria.com/"><img src = "images/yoda.png" alt = "baby yoda" />Shantoria</a></td>
+                    <td><a href = "https://shazena.github.io"><img src = "images/yoda.png" alt = "baby yoda" />Shazena</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href = "https://woesel.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Tenzin</a></td>
+                    <td><a href = ""><img src = "images/yoda.png" alt = "baby yoda" />Timmy</a></td>
+                    <td></td>
+                </tr>
+            </table>
+        </nav>
+
+        <footer>
+            <p class = "clear-float">Special thanks to the TechHire and SoftwareGuild staff!</p>
+        </footer>
+    </body>
 </html>
