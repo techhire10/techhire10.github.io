@@ -1,7 +1,7 @@
 <!--
     Name: Margaret Donin
     Date Created: 3/25/20
-    Most recent revision:
+    Most recent revision: 3/28/20
     Please excuse any typos especially in names.
     I tried to be careful, I apologize in advance.
 -->
@@ -9,8 +9,14 @@
 <html lang="en">
     <head>
         <title>Cohort 10</title>
+
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous">        
+
+        <!--fonts from google-->
         <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
         <style>
             body {
                 background-image: url(images/matrix.jpg);
@@ -19,7 +25,7 @@
             table, footer, h2, h3{
                 background-color: rgba(171, 228, 171, 0.9);
                 border: rgba(30, 85, 30, 0.87) 5px double;
-
+                
             }
 
             header, footer, h2, h3 {
@@ -28,40 +34,29 @@
             }
 
             header {
-                margin: 3% 20% 2%;
                 color: white;
                 font-size: 50px;
                 background-image: radial-gradient(white, rgba(171, 228, 171, 0.9));
-                border-radius: 15px;
+                border-radius: 20px;
                 text-shadow: 5px 5px rgba(30, 85, 30, 0.87);
+                margin: 2% 10%;
+                padding: 3%;
             }
 
- /* Still need to work out the spacing and such, or get familiar with bootstrap ;)
-            h3 {
-                max-width: 300px;
-                padding: 0 1em;
+            h3, h2 {
+                padding: 2%;
                 text-align: center;
-                margin-left: 30%;
-            }
-*/
-
-            h2 {
-                margin: 2% 5% 2% 30%;
-                padding: 0 1em 0;
-                font-size: 32px;
-                float: left;
+                margin: 15% 3%;
             }
 
             footer {
-                margin: auto;
                 font-size: 30px;
-                min-height: auto;
-                min-width: auto;
                 max-width: 700px;
+                margin: 2% 20%;
+                padding: 0.5em 1em;
             }
-
+            
             table {
-                margin: 2% 5% 2% 15%;
                 padding: 1%;
             }
 
@@ -76,13 +71,14 @@
                 color:black;
                 text-decoration-line: none;
             }
+
             a:visited {
                 color:rgba(30, 85, 30, 0.87);
             }
 
             a:hover {
                 color: white;
-                cursor: url(images/lightSaber.png), crosshair;
+                cursor: url(images/lightSaber.png), auto;	
             }
 
             a:active {
@@ -93,62 +89,87 @@
                 width: 30px;
             }
 
+            .row{
+                align-content: space-around;
+                align-self: center;
+            }
+
         </style>
     </head>
+
     <body>
-        <header>
-            <h1>TechHire Cohort 10</h1>
-        </header>
+        <div class = "container">
+            <div class = "row align-items-center">
+                <header>
+                    <h1>TechHire Cohort 10</h1>
+                </header>
+            </div>
 
-        <nav>
-            <!--
-            need to get to know bootstrap I before adding this in
-            <h3><a href="https://zoom.us/j/2792401555?status=success">Zoom</a></h3>
-            -->
-            <h2>Students</h2>
+            
+            <nav>
+         
+                </div>
 
-            <!--plan to rearrange this using bootstrap as soon as I finish the CSS chapter-->
-            <table>
-                <tr>
-                    <td><a href = "http://abdullah35th.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Abdullah</a></td>
-                    <td><a href = "https://arfin75.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Afrin</a></td>
-                    <td><a href = "http://azimovbob.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Bob</a></td>
-                </tr>
+                <div class = "row align-items-center">
+                    <div class = "col-lg-3 col-md">
+                        <h2>Students</h2>
+                    </div>
 
-                <tr>
-                    <td><a href = "https://chelseaam.com/"><img src = "images/yoda.png" alt = "baby yoda" />Chelsea</a></td>
-                    <td><a href = "http://elenacaballero2.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Elena</a></td>
-                    <td><a href = "https://hinkabi.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Hannah</a></td>
-                </tr>
+                    <div class = "col-lg-9 col-md">
+                        <table>
+                            <tr>
+                                <td><a href = "http://abdullah35th.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Abdullah</a></td>
+                                <td><a href = "https://shah-arfin.com/"><img src = "images/yoda.png" alt = "baby yoda" />Arfin</a></td> 
+                                <td><a href = "http://azimovbob.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Bob</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href = "https://chelseaam.com/"><img src = "images/yoda.png" alt = "baby yoda" />Chelsea</a></td>
+                                <td><a href = "http://elenacaballero2.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Elena</a></td>
+                                <td><a href = "https://hinkabi.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Hannah</a></td>
+                            </tr>
 
-                <tr>
-                    <td><a href = "https://genoftravelers.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Karma</a></td>
-                    <td><a href = "https://zakharovakr.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Kristina</a></td>
-                    <td><a href = "https://kimberleem.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Max</a></td>
-                </tr>
+                            <tr>
+                                <td><a href = "https://genoftravelers.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Karma</a></td>
+                                <td><a href = "https://zakharovakr.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Kristina</a></td>
+                                <td><a href = "https://kimberleem.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Max</a></td>
+                            </tr>
+                                
+                            <tr>
+                                <td><a href = "https://mohammedchowdhury.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Mohammed</a></td>
+                                <td><a href = "https://narishsingh.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Narish</a></td>
+                                <td><a href = "https://patrickmichaelwalsh.com/techhire10/"><img src = "images/yoda.png" alt = "baby yoda" />Patrick</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href = "https://rtdonin.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Rita</a></td>
+                                <td><a href = "https://shantoria.com/"><img src = "images/yoda.png" alt = "baby yoda" />Shantoria</a></td>
+                                <td><a href = "https://shazena.github.io"><img src = "images/yoda.png" alt = "baby yoda" />Shazena</a></td>
+                            </tr>
+                                
+                            <tr>
+                                <td><a href = "https://woesel.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Tenzin</a></td>
+                                <td><a href = "https://itimmy.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Timmy</a></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>                        
+                </div>
+            </nav>
 
-                <tr>
-                    <td><a href = "https://mohammedchowdhury.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Mohammed</a></td>
-                    <td><a href = "https://narishsingh.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Narish</a></td>
-                    <td><a href = "https://patrickmichaelwalsh.com/techhire10/"><img src = "images/yoda.png" alt = "baby yoda" />Patrick</a></td>
-                </tr>
+            <div class = "row align-items-center">
+                <footer>
+                    <p class = "clear-float">Special thanks to the TechHire and SoftwareGuild staff!</p>
+                </footer>
+            </div>
+        
+        </div>
 
-                <tr>
-                    <td><a href = "https://rtdonin.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Rita</a></td>
-                    <td><a href = "https://shantoria.com/"><img src = "images/yoda.png" alt = "baby yoda" />Shantoria</a></td>
-                    <td><a href = "https://shazena.github.io"><img src = "images/yoda.png" alt = "baby yoda" />Shazena</a></td>
-                </tr>
+        
+        <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin = "anonymous"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin = "anonymous"></script>
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin = "anonymous"></script>
 
-                <tr>
-                    <td><a href = "https://woesel.github.io/"><img src = "images/yoda.png" alt = "baby yoda" />Tenzin</a></td>
-                    <td><a href = ""><img src = "images/yoda.png" alt = "baby yoda" />Timmy</a></td>
-                    <td></td>
-                </tr>
-            </table>
-        </nav>
-
-        <footer>
-            <p class = "clear-float">Special thanks to the TechHire and SoftwareGuild staff!</p>
-        </footer>
     </body>
 </html>
